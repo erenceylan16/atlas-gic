@@ -82,30 +82,15 @@ Over time, good agents get louder. Bad agents get quieter. The system learns who
 - Reverted: 37 (70%)
 - Agents modified: volatility, semiconductor, china, news sentiment, emerging markets, financials, and others
 
-### Darwinian Agent Weights (Final)
+### Performance
+- Deployment phase return: **+22% in 173 days**
+- Best individual pick: **AVGO at $152, held for +128%**
 
-The system learned which agents to trust through 378 days of outcome feedback:
+### Darwinian Agent Weights
 
-**Strongest (weight 2.5 - maximum trust):**
-| Agent | Why it won |
-|-------|-----------|
-| Geopolitical | Correctly read macro regime shifts |
-| Commodities | Oil and gold calls consistently directionally correct |
-| Volatility | Improved through autoresearch modifications |
-| Energy | Positioned for oil regime changes |
-| Industrials | Defence spending thesis validated |
-| Ackman | Quality compounder picks outperformed sector |
-| Aschenbrenner | AI/compute thesis directionally correct |
+The system learned which agents to trust. Macro-regime and quality-compounder agents rose to maximum weight. The system's own portfolio manager (CIO) was downweighted to the minimum — it discovered the orchestration bottleneck before we did.
 
-**Weakest (weight 0.3 - minimum trust):**
-| Agent | Why it lost |
-|-------|-----------|
-| CIO | Portfolio management rules too passive |
-| Central Bank | Rate predictions inconsistent |
-| Semiconductor | Individual picks good but timing poor |
-| Institutional Flow | Signal too noisy |
-
-**Key Finding:** The system independently discovered that its own portfolio manager (CIO) was its weakest component - downweighting it to the minimum 0.3 before we diagnosed the same issue manually.
+Full agent weight details are proprietary.
 
 ### Equity Curve
 
